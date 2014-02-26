@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flinestone Fire</title>
+  </head>
+
+  <body>
+    <h1>Flinestone Fire</h1>
+    <table>
+      <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Position</strong></td>
+      </tr>
+      <% @team.each do |player| %>
+        <tr>
+          <td><%= player[:first_name]+ " " + player[:last_name] %></td>
+          <td><%= player[:position] %></td>
+        </tr>
+      <% end %>
+
+
+    </table>
+
+
+
+  </body>
+</html>
